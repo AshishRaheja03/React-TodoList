@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+.container {
+  width: 50%;
+  margin-top: 8em;
+  color: #1c2e4a;
+}
+h1 {
+  text-shadow: 0.04em 0.03em #696969;
+  font-weight: 400;
+  font-family: "Merriweather", serif;
+}
+#todoInput {
+  font-size: 1.5em;
+  width: 75%;
+  outline: none;
+  border: none;
+}
+#addBtn {
+  width: 10%;
+  border: none;
+  outline: none;
+  color: #1c2e4a;
+  background-color: white;
+  font-size: 1.5em;
+  font-weight: 900;
+  text-shadow: 1px 1px #696969;
+  background: #ffffff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #64f38c,
+    #ffffff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #64f38c,
+    #ffffff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#addBtn i {
+  font-size: 1.2em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#resetBtn {
+  outline: none;
+  background-color: #1c2e4a;
   color: white;
+  border: 2px solid white;
+  border-radius: 1em;
+  font-size: 1.2em;
+  margin-left: 0.7em;
+  padding: 0.25em 1em;
+  width: 15%;
 }
 
-.App-link {
-  color: #61dafb;
+#todos {
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+li {
+  list-style: none;
+  background: #141e30; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #243b55,
+    #141e30
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #243b55,
+    #141e30
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+  width: 90%;
+  border-radius: 0.1em;
+  text-align: left;
+  font-size: 1.5em;
+  font-weight: 300;
+}
+.delBtn {
+  width: 9%;
+  outline: none;
+  border-radius: 0.2em;
+  border: none;
+  background-color: #f08080;
+  color: white;
+  font-weight: 600;
+  /* margin-left: 1em; */
+  background: #2196f3; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #f44336,
+    #1c2e4a
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #f44336,
+    #1c2e4a
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
